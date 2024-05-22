@@ -1,0 +1,658 @@
+html {
+  font-family: "Oswald";
+  color: #4f4f4f;
+  scroll-behavior: smooth;
+
+}
+
+.nav-logo,
+.footer {
+  font-family: "OswaldDemiBold";
+}
+
+.navbar-menu,
+.nav-connect {
+  list-style-type: none;
+  display: flex;
+  gap: 5px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #4f4f4f;
+}
+
+.navbar-link::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: #000000;
+  transition: width 0.4s ease-in-out;
+}
+
+.navbar-link:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-logo {
+  font-size: 36px;
+  color: #8f7efc;
+  text-decoration: none;
+}
+
+.header-nav {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 180px;
+}
+
+.navbar-menu,
+.navbar-connect {
+  display: flex;
+  gap: 60px;
+  font-size: 18px;
+}
+
+.nav-log {
+  padding: 7px 20px;
+  background-color: #8f7efc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.nav-log:hover {
+  background-color: #7c68fd;
+  transition: 0.5s ease;
+}
+
+.nav-reg {
+  padding: 7px 20px;
+  background-color: #ffa500;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.nav-reg:hover {
+  background-color: #ffb731;
+  transition: 0.5s ease;
+}
+
+.school-page-info {
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+}
+
+.school-page-about {
+  display: flex;
+  justify-content: center;
+  width: 1400px;
+  height: 509.3px;
+  background-color: #8f7efc;
+  border-radius: 70px;
+  gap: 50px;
+}
+
+.school-page-man-image img {
+  display: flex;
+  justify-content: flex-end;
+  width: 635.75px; /* Ширина изображения */
+  height: 602.92px; /* Высота изображения */
+}
+
+.school-page-left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  gap: 2%;
+}
+
+.school-page-left-side a {
+  color: #4f4f4f;
+  text-decoration: none;
+  padding: 15px 35px;
+  background-color: #ffe658;
+  border-radius: 30px;
+  box-shadow: 0px 5px 0px 0px rgba(203, 183, 67, 1);
+}
+
+.img-icon-online img {
+  width: 33px;
+  height: 33px;
+}
+
+.school-page-advantages {
+  display: flex;
+  gap: 100px;
+  padding: 0px 0px 20px 0px;
+  margin: 0;
+}
+
+.advantages-item {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  line-height: 25px;
+}
+
+.advantages-item img {
+  width: 35px;
+  height: 35px;
+}
+
+.school-page-online {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding-right: 10px;
+  border: 2px solid white;
+  border-radius: 20px;
+  max-width: 170px;
+  font-size: 16px;
+}
+
+.school-page-button {
+  display: flex;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.adv-info-title {
+  display: flex;
+  padding: 50px 0px 0px 0px;
+  justify-content: center;
+  text-align: center;
+  line-height: 45px;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Два столбца с равной шириной */
+  gap: 20px; /* Пространство между блоками */
+  justify-content: center; /* Центрирование по горизонтали */
+  margin: 0 auto; /* Центрирование по всей ширине контейнера */
+  gap: 45px;
+}
+
+.adv-info-block-number {
+  font-family: "OswaldRegular";
+  font-size: 26px;
+  font-weight: bold;
+  background-color: #e3e5f8;
+  padding: 20px;
+  width: 25px; /* Adjust width to fit the number */
+  height: 25px; /* Adjust height to fit the number */
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adv-info-block-title {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 21px;
+  line-height: 30px;
+}
+
+.advantages-info-block {
+  display: flex;
+  flex-direction: row;
+  max-width: 530px;
+  max-height: 210px;
+  padding: 20px;
+  background-color: #f3f5fd;
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+.adv-info-block-desc {
+  padding: 10px 0px 0px 0px;
+  line-height: 22px;
+}
+
+.advantages-info-left-side {
+  position: relative;
+  left: 20px;
+}
+
+.advantages-right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-right-side img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-left: auto;
+}
+
+.advantages-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.advantages-footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f3f5fd;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.adv-footer-title {
+  font-size: 12px;
+}
+
+.adv-footer-img img {
+  width: 131px;
+  height: 131px;
+  position: relative;
+  top: 10px;
+}
+
+.adv-footer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 60px;
+  gap: 50px;
+}
+
+.course-info-title {
+  text-align: center;
+}
+
+.course-info-title h2 {
+  font-size: 2em;
+}
+
+.courses-block {
+  width: 352px;
+  height: 342px;
+  padding: 15px;
+  border-radius: 30px;
+  background-color: #5db560;
+
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+
+.courses-img img {
+  width: 100px;
+  height: 100px;
+}
+
+.courses-block-top {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.courses-button {
+  text-align: center;
+}
+
+.courses-link {
+  background-color: #fff;
+  padding: 10px 35px;
+  border-radius: 30px;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+}
+
+.courses-link:hover {
+  background-color: #eeeeee;
+  transition: 0.3s;
+}
+
+.courses-block-text {
+  color: #fff;
+}
+
+.courses-block-title h3 {
+  font-size: 26px;
+}
+
+.courses-block-desc {
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.courses-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.html {
+  background-color: #735ff1;
+}
+
+.css {
+  background-color: #fd7b55;
+}
+
+.js {
+  background-color: #a454b4;
+}
+
+.courses-block-text {
+  width: 50%;
+}
+
+.js img,
+.css img,
+.html img {
+  width: 100px;
+  height: 100px;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Два столбца с равной шириной */
+  gap: 20px; /* Пространство между блоками */
+  justify-content: center; /* Центрирование по горизонтали */
+  justify-items: center;
+  margin: 0px 50%;
+}
+
+.course-info {
+  padding: 125px 0px 100px 0px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 40px 0px 20px 0px;
+  background-color: #f3f5fd;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.footer-tel-number {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-title h2 {
+  margin: 0;
+  color: #735ff1;
+}
+
+.footer-title p {
+  color: #4f4f4f;
+  margin-top: 10px;
+}
+
+.tel-number-img img {
+  width: 40px;
+  height: 40px;
+}
+
+.tel-number a {
+  text-decoration: none;
+  color: #4f4f4f;
+}
+
+/* burger */
+
+.navbar-menu-hidden {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu-hidden > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+    position: absolute;
+    right: 40px;
+    top: -440px;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.navbar-nav-hidden {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #000;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media screen and (max-width: 430px) {
+  .navbar-nav {
+    display: none;
+  }
+
+  .school-page-about {
+    flex-direction: column;
+  }
+
+  .school-page-man-image {
+    display: none;
+  }
+
+  .advantages-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .school-page-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px 40px 0px 40px;
+  }
+
+  .school-page-advantages {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .adv-info-title {
+    font-size: 12px;
+  }
+
+  .advantages-info-block {
+    font-size: 14px;
+    max-width: 300px;
+    max-height: 200px;
+  }
+
+  .advantages-right-side img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .adv-info-block-title {
+    gap: 10px;
+  }
+
+  .adv-info-block-title h2 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .adv-info-block-number {
+    font-size: 16px;
+    width: 4px;
+    height: 4px;
+  }
+
+  .adv-footer-info {
+    max-width: 225px;
+    height: 100px;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .adv-footer-img {
+    display: none;
+  }
+
+  .adv-footer-title h1 {
+    content: "А ЕЩЁ РЕБЯТА ОСВАИВАЮТ  ПЕРСПЕКТИВНУЮ ПРОФЕССИЮ";
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .adv-footer-desc {
+    content: "Программист - довольно востребованная специальность нашего века. Начав обучение уже сейчас, вы можете сделать первый шаг к успешному будущему.";
+    font-size: 12px;
+  }
+
+  .advantages-grid {
+    gap: 15px;
+  }
+
+  .advantages-footer {
+    margin-top: auto;
+  }
+
+  .course-info-title h2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .courses-block {
+    max-width: 300px;
+    height: 300px;
+  }
+
+  /* burger */
+
+    .navbar-nav, .navbar-connect, .nav-logo {
+        display: none;
+    }
+  
+  .navbar-nav-hidden {
+    display: flex;
+  }
+
+  .menu-button-container {
+    display: flex;
+  }
+  .navbar-menu-hidden {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  #menu-toggle ~ .navbar-menu-hidden li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .navbar-menu-hidden li {
+    border-bottom: 1px solid #000;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .navbar-menu-hidden > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0px 10px 0px;
+    width: 100%;
+    background-color: #fff;
+    font-family: 'OswaldMedium';
+  }
+  .navbar-menu-hidden > li:not(:last-child) {
+    border-bottom: 1px solid #4f4f4f;
+  }
+
+  .nav-log, .nav-reg{
+    background-color: #fff;
+    color: #4f4f4f;
+  }
+
+}

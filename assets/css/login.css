@@ -1,0 +1,185 @@
+html {
+    font-family: 'Oswald';
+    color: #4F4F4F;
+}
+
+.main-logo {
+    font-size: 36px;
+    color: #8F7EFC;
+    text-decoration: none;
+}
+
+.header-nav {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 200px;
+}
+
+.log-block-layout {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4.5%;
+    padding-bottom: 5%;
+}
+
+.log-block {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 3%;
+
+    gap: 40px;
+    border: 2px solid #d3d3d3;
+    border-radius: 40px;
+    width: 600px;
+    height: 550px;
+}
+
+.log-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.log-block-ask-title h2, .log-block-title h2{
+    margin: 0;
+    padding: 0;
+}
+
+.log-block-or {
+    display: flex;
+    gap: 25px;
+}
+
+.log-form input {
+    border-radius: 40px;
+    padding: 10px 20px;
+    width: 400px;
+    border: 2px solid #d3d3d3;
+}
+
+.log-form input::placeholder {
+    color: #aaaaaa;
+}
+
+.login-btn button {
+    background-color: #8F7EFC;
+    color: #fff;
+    padding: 10px 20px;
+    width: 200px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.reg-link {
+    text-decoration: none;
+    background-color: #FFC151;
+    color: #fff;
+    padding: 10px 40px;
+    border: 0px;
+    border-radius: 40px;
+}
+
+.reset-password-link {
+    text-decoration: none;
+    color: #4F4F4F;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 100px 20px 100px;
+    background-color: #F3F5FD;
+}
+
+.footer-tel-number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-title h2 {
+    margin: 0;
+    color: #735FF1;
+}
+
+.footer-title p {
+    color: #4F4F4F;
+    margin-top: 10px;
+}
+
+.tel-number-img img {
+    width: 40px;
+    height: 40px;
+}
+
+.tel-number a {
+    text-decoration: none;
+    color: #4F4F4F;
+}
+
+hr {
+    width: 170px;
+}
+@media screen and (max-width: 430px){
+    .log-block {
+        border: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 3%;
+    
+        gap: 40px;
+        border-radius: 40px;
+        width: 400px;
+        height: 500px;
+    }
+
+    .log-form input{
+        width: 300px;
+    }
+
+    .log-block-layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        margin-top: 32.5%;
+        gap: 35px;
+    }
+
+    .footer-title h2 {
+        font-size: 18px;
+    }
+
+    .tel-number-img img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .tel-number {
+        width: 150px;
+    }
+
+    hr {
+        width: 130px;
+    }
+}

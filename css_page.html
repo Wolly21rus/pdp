@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProDevPlanet</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/fonts/oswald.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="header-nav">
+            <div class="nav-logo">
+                <a href="index.html" class="main-logo">PDP</a>
+            </div>
+
+            <nav class="navbar-nav">
+                <ul class="navbar-menu">
+                  <li class="navbar-item">
+                    <a href="#course-info" class="navbar-link">Курсы</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="" class="navbar-link">Частые вопросы</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#advantages-info" class="navbar-link">О нас</a>
+                  </li>
+                </ul>
+              </nav>
+
+            <div class="navbar-connect">
+                <ul class="nav-connect">
+                    <li class="navbar-log">
+                        <a href="login.html" class="nav-log">
+                            Войти
+                        </a>
+                    </li>
+                    <li class="navbar-reg">
+                        <a href="reg.html" class="nav-reg">
+                            Регистрация
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <nav class="navbar-nav-hidden">
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="navbar-menu-hidden">
+            <li class="navbar-item">
+                <a href="index.html" class="navbar-link">Главная</a>
+            </li>
+              <li class="navbar-item">
+                <a href="#course-info" class="navbar-link">Курсы</a>
+              </li>
+              <li class="navbar-item">
+                <a href="" class="navbar-link">Частые вопросы</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#advantages-info" class="navbar-link">О нас</a>
+              </li>
+              <li class="navbar-log">
+                <a href="login.html" class="nav-log">
+                    Войти
+                </a>
+            </li>
+            <li class="navbar-reg">
+                <a href="reg.html" class="nav-reg">
+                    Регистрация
+                </a>
+            </li>
+            </ul>
+          </nav>
+
+    </header>
+
+    <div class="container">
+
+        <h1>Основы CSS</h1>
+
+        <div>
+            CSS (Cascading Style Sheets) — это код, который вы используете для стилизации вашей веб-страницы. Основы CSS помогут вам понять, что вам нужно для начала работы. Мы ответим на такие вопросы как: Как сделать мой текст черным или красным? Как сделать так, чтобы контент появлялся в определённом месте на экране? Как украсить мою веб-страницу с помощью фоновых изображений и цветов?
+        </div>
+
+        <h1>Так что же такое CSS?</h1>
+
+        <div>
+            Как и HTML, CSS на самом деле не является языком программирования. Это не язык разметки - это язык таблицы стилей. Это означает, что он позволяет применять стили выборочно к элементам в документах HTML. Например, чтобы выбрать все элементы абзаца на HTML странице и изменить текст внутри них с чёрного на красный, вы должны написать этот CSS:
+        </div>
+
+        <div class="code-block">
+            
+            p { <br>
+                &emsp; color: <br> 
+                &emsp; red; <br>
+            }
+
+            <img src="assets/img/copy.png" alt="">
+        </div>
+
+        <div>
+            Давайте попробуем: вставьте эти три строки CSS в новый файл в ваш текстовый редактор, а затем сохраните файл как style.css в вашей папке styles. 
+        </div>
+
+        <h2>Анатомия набора правил CSS</h2>
+
+        <img class="picture" src="assets/img/img3.png" alt="">
+
+        <div>
+            Вся структура называется набором правил (но зачастую для краткости "правило"). Отметим также имена отдельных частей: <br>
+            <span style="text-decoration: underline; text-underline-offset: 5px;">Селектор (Selector)</span> <br>
+            Имя HTML-элемента в начале набора правил. Он выбирает элемент(ы) для применения стиля (в данном случае, элементы p ). Для стилизации другого элемента, просто измените селектор. <br>
+            <span style="text-decoration: underline; text-underline-offset: 5px;">Объявление (Declaration)</span> <br>
+            Единственное правило, например color: red; указывает, какие из свойств элемента вы хотите стилизовать. <br>
+            <span style="text-decoration: underline; text-underline-offset: 5px;">Свойства (Properties)</span> <br>
+            Способы, которыми вы можете стилизовать определённый HTML-элемент (в данном случае, color является свойством для элементов &lt;p&gt;). В CSS вы выбираете, какие свойства вы хотите затронуть в вашем правиле. <br>
+            <span style="text-decoration: underline; text-underline-offset: 5px;">Значение свойства (Property value)</span> <br>
+            Справа от свойства, после двоеточия, у нас есть значение свойства, которое выбирает одно из множества возможных признаков для данного свойства (существует множество значений color, помимо red). <br>
+            Обратите внимание на важные части синтаксиса: <br>
+            <ul>
+                <li>Каждый набор правил (кроме селектора) должен быть обёрнут в фигурные скобки ({}).</li>
+                <li>В каждом объявлении необходимо использовать двоеточие (:), чтобы отделить свойство от его значений.</li>
+                <li>В каждом наборе правил вы должны использовать точку с запятой (;), чтобы отделить каждое объявление от следующего.</li>
+            </ul>
+            Таким образом, чтобы изменить несколько значений свойств сразу, вам просто нужно написать их, разделяя точкой с запятой, например так:
+        </div>
+
+        <div class="code-block">
+            
+            p { <br>
+                &emsp;color: red; <br>
+                &emsp;width: 500px; <br>
+                &emsp;border: 1px solid black; <br>
+            }
+
+            <img src="assets/img/copy.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-title">
+            <h2>PDP</h2>
+            <p>ProDevPlanet</p>
+        </div>
+
+        <div class="footer-tel-number">
+            <div class="tel-number-img">
+                <img src="assets/img/phone.png" alt="">
+            </div>
+
+            <div class="tel-number">
+                <a href="tel:+79374256953" class="number">+7 937 425-69-53 </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

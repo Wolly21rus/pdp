@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProDevPlanet</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/fonts/oswald.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="header-nav">
+            <div class="nav-logo">
+                <a href="index.html" class="main-logo">PDP</a>
+            </div>
+
+            <div class="nav-exit">
+                <a href="index.html" class="nav-exit-link">
+                    <img src="assets/img/Multiply.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="log-block-layout">
+        <div class="log-block">
+            <div class="log-block-title">
+                <h2>Вход</h2>
+            </div>
+    
+            <div class="log-block-input-form">
+                <form action="" class="log-form">
+                    <input type="text" name="" id="login" class="login-input" placeholder="Логин или почта">
+                    <input type="password" name="" id="password" class="password-input" placeholder="Пароль">
+                
+                    <div class="login-btn">
+                        <button type="submit" class="login-button">Войти</button>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="log-block-or">
+            <hr>    Или  <hr>
+            </div>
+    
+            <div class="log-block-ask-title">
+                <h2>Отсутствует аккаунт?</h2>
+            </div>
+    
+            <div class="reg-btn">
+                <a href="reg.html" class="reg-link">Зарегистрироваться</a>
+            </div>
+    
+            <div class="reset-password">
+                <a href="" class="reset-password-link">Забыли пароль?</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-title">
+            <h2>PDP</h2>
+            <p>ProDevPlanet</p>
+        </div>
+
+        <div class="footer-tel-number">
+            <div class="tel-number-img">
+                <img src="assets/img/phone.png" alt="">
+            </div>
+
+            <div class="tel-number">
+                <a href="tel:+79374256953" class="number">+7 937 425-69-53 </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginInput = document.getElementById("login");
+            const passwordInput = document.getElementById("password");
+
+            document.querySelector('.login-button').addEventListener('click', function(event) {
+                event.preventDefault();
+
+                const login = loginInput.value;
+                const password = passwordInput.value;
+
+                if (login === "user" & password === "123") {
+                    window.location.href = "profile.html"; 
+                }
+            });
+        });
+
+    </script>
+
+</body>
+</html>

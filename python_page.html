@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProDevPlanet</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/fonts/oswald.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="header-nav">
+            <div class="nav-logo">
+                <a href="index.html" class="main-logo">PDP</a>
+            </div>
+
+            <nav class="navbar-nav">
+                <ul class="navbar-menu">
+                  <li class="navbar-item">
+                    <a href="#course-info" class="navbar-link">Курсы</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="" class="navbar-link">Частые вопросы</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#advantages-info" class="navbar-link">О нас</a>
+                  </li>
+                </ul>
+              </nav>
+
+            <div class="navbar-connect">
+                <ul class="nav-connect">
+                    <li class="navbar-log">
+                        <a href="login.html" class="nav-log">
+                            Войти
+                        </a>
+                    </li>
+                    <li class="navbar-reg">
+                        <a href="reg.html" class="nav-reg">
+                            Регистрация
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <nav class="navbar-nav-hidden">
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="navbar-menu-hidden">
+            <li class="navbar-item">
+                <a href="index.html" class="navbar-link">Главная</a>
+            </li>
+              <li class="navbar-item">
+                <a href="#course-info" class="navbar-link">Курсы</a>
+              </li>
+              <li class="navbar-item">
+                <a href="" class="navbar-link">Частые вопросы</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#advantages-info" class="navbar-link">О нас</a>
+              </li>
+              <li class="navbar-log">
+                <a href="login.html" class="nav-log">
+                    Войти
+                </a>
+            </li>
+            <li class="navbar-reg">
+                <a href="reg.html" class="nav-reg">
+                    Регистрация
+                </a>
+            </li>
+            </ul>
+          </nav>
+
+    </header>
+
+    <div class="container">
+        <h1>Основы Python</h1>
+
+        <div>
+            Python — популярный язык программирования. Он был создан Гвидо ван Россумом и выпущен в 1991 году.
+            Он используется для:
+            <ul>
+                <li> веб-разработка (серверная часть),</li>
+                <li>разработка программного обеспечения,</li>
+                <li>математика,</li>
+                <li>системные сценарии.</li>
+            </ul>
+        </div>
+
+        <h2>Ввод/вывод</h2>
+
+        <div>
+            Для ввода данных в Python используется команда input() она позволяет принимать любые вводимые данные, можно сделать ввод только чисел используя int(input()) или же чисел с запятой, используя float(input()), или же только строчные значения string(input()) <br> 
+            Для вывода используется команда print(). Чтобы вывести сообщение нужно прописать print(‘Ваше сообщение’), можно выводить также переменную, введя просто название переменной в команду, на примере:
+        </div>
+
+        <div class="code-block">
+
+            message = “Привет, мир” <br>
+            print(message)
+
+            <img src="assets/img/copy.png" alt="">
+        </div>
+
+        <h2>Оператор условия</h2>
+
+        <div>
+            Сначала записывается часть if с условным выражением, далее могут следовать одна или более необязательных частей elif, и, наконец, необязательная часть else. Общая форма записи условной инструкции if выглядит следующим образом:
+        </div>
+
+        <div class="code-block">
+
+            if test1: <br>
+            &emsp;state1 <br>
+            elif test2: <br>
+            &emsp;state2 <br>
+            else: <br>
+            &emsp;state3 <br>
+
+            <img src="assets/img/copy.png" alt="">
+        </div>
+
+        <h2>Цикл for</h2>
+
+        <div>
+            Цикл for, также называемый циклом с параметром, в языке Питон богат возможностями. В цикле for указывается переменная и множество значений, по которому будет пробегать переменная. Множество значений может быть задано списком, кортежем, строкой или диапазоном.
+        </div>
+
+        <div class="code-block">
+            
+            i = 1 <br>
+            for color in 'red', 'orange', 'yellow', 'green', 'cyan', 'blue', 'violet': <br>
+            &emsp;print('#', i, ' color of rainbow is ', color, sep = '') <br>
+            &emsp;i += 1
+
+            <img src="assets/img/copy.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-title">
+            <h2>PDP</h2>
+            <p>ProDevPlanet</p>
+        </div>
+
+        <div class="footer-tel-number">
+            <div class="tel-number-img">
+                <img src="assets/img/phone.png" alt="">
+            </div>
+
+            <div class="tel-number">
+                <a href="tel:+79374256953" class="number">+7 937 425-69-53 </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

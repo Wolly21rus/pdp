@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProDevPlanet</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/fonts/oswald.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="header-nav">
+            <div class="nav-logo">
+                <a href="index.html" class="main-logo">PDP</a>
+            </div>
+
+            <nav class="navbar-nav">
+                <ul class="navbar-menu">
+                  <li class="navbar-item">
+                    <a href="#course-info" class="navbar-link">Курсы</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="" class="navbar-link">Частые вопросы</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#advantages-info" class="navbar-link">О нас</a>
+                  </li>
+                </ul>
+              </nav>
+
+            <div class="navbar-connect">
+                <ul class="nav-connect">
+                    <li class="navbar-log">
+                        <a href="login.html" class="nav-log">
+                            Войти
+                        </a>
+                    </li>
+                    <li class="navbar-reg">
+                        <a href="reg.html" class="nav-reg">
+                            Регистрация
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <nav class="navbar-nav-hidden">
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="navbar-menu-hidden">
+            <li class="navbar-item">
+                <a href="index.html" class="navbar-link">Главная</a>
+            </li>
+              <li class="navbar-item">
+                <a href="#course-info" class="navbar-link">Курсы</a>
+              </li>
+              <li class="navbar-item">
+                <a href="" class="navbar-link">Частые вопросы</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#advantages-info" class="navbar-link">О нас</a>
+              </li>
+              <li class="navbar-log">
+                <a href="login.html" class="nav-log">
+                    Войти
+                </a>
+            </li>
+            <li class="navbar-reg">
+                <a href="reg.html" class="nav-reg">
+                    Регистрация
+                </a>
+            </li>
+            </ul>
+          </nav>
+
+    </header>
+
+    <div class="container">
+
+        <h1>Основы JavaScript</h1>
+
+        <div>
+            Давайте изучим основы создания скриптов.
+        </div>
+
+        <h1>Тег &lt;script&gt;</h1>
+
+        <div>
+            Программы на JavaScript могут быть вставлены в любое место HTML-документа с помощью тега  &lt;script&gt;. Для примера:
+        </div>
+
+        <div class="code-block">
+            <p>
+                &lt;!DOCTYPE HTML&gt; <br>
+                &lt;html&gt; <br>
+                &lt;body&gt;  <br>
+                &emsp;&lt;p&gt;Перед скриптом...&lt;/p&gt;  <br>
+                &emsp;&lt;script&gt; <br>
+                &emsp;&emsp;alert( 'Привет, мир!' ); <br>
+                    &emsp;&lt;/script&gt; <br>
+                    &emsp;&lt;p&gt;...После скрипта.&lt;/p&gt; <br>
+                &lt;/body&gt; <br>
+                &lt;/html&gt;
+            </p>
+
+
+            <img src="assets/img/copy.png" alt="">
+        </div>
+
+        <div>
+            Тег &lt;script&gt; содержит JavaScript-код, который автоматически выполнится, когда браузер его обработает.
+        </div>
+
+        <h2>Внешние скрипты</h2>
+
+        <div>
+            Давайте взглянем на Если у вас много JavaScript-кода, вы можете поместить его в отдельный файл.
+            Файл скрипта можно подключить к HTML с помощью атрибута src: CSS немного более подробно:
+        </div>
+
+        
+        <div class="code-block">
+            <p>
+                &lt;script src="assets/js/script.js"&gt;&lt;/script&gt;
+            </p>
+
+            <img src="assets/img/copy.png" alt="">
+        </div>
+
+        <div>
+            Здесь assets/js/script.js – это абсолютный путь от корневой папки до необходимого файла. Корневой папкой может быть корень диска или корень сайта, в зависимости от условий работы сайта. Также можно указать относительный путь от текущей страницы. Например, src="script.js" или src="./script.js"  будет означать, что файл "script.js" находится в текущей папке.
+           <br> Можно указать и полный URL-адрес. Например:
+        </div>
+
+        <div class="code-block">
+
+            <p>
+                &lt;script <br> src="https://cdnjs.cloudflare.com/ajax/libs/ <br> lodash.js/3.2.0/lodash.js"<br>&gt;&lt;/script&gt;
+            </p>
+
+            <img src="assets/img/copy.png" alt="">
+        </div>
+
+        <h2>Итого</h2>
+
+        <div>
+            <ul>
+                <li>Для добавления кода JavaScript на страницу используется тег &lt;script&gt;</li>
+                <li>Атрибуты type и language необязательны.</li>
+                <li>Скрипт во внешнем файле можно вставить с помощью &lt;script src="path/to/script.js"&gt;&lt;/script&gt;.</li>
+            </ul>
+        </div>
+
+        <div>
+            Нам ещё многое предстоит изучить про браузерные скрипты и их взаимодействие со страницей. Но, как уже было сказано, эта часть учебника посвящена именно языку JavaScript, поэтому здесь мы постараемся не отвлекаться на детали реализации в браузере. Мы воспользуемся браузером для запуска JavaScript, это удобно для онлайн-демонстраций, но это только одна из платформ, на которых работает этот язык.
+        </div>
+        
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-title">
+            <h2>PDP</h2>
+            <p>ProDevPlanet</p>
+        </div>
+
+        <div class="footer-tel-number">
+            <div class="tel-number-img">
+                <img src="assets/img/phone.png" alt="">
+            </div>
+
+            <div class="tel-number">
+                <a href="tel:+79374256953" class="number">+7 937 425-69-53 </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

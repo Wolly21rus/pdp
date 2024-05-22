@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProDevPlanet</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/fonts/oswald.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="header-nav">
+            <div class="nav-logo">
+                <a href="index.html" class="main-logo">PDP</a>
+            </div>
+
+            <nav class="navbar-nav">
+                <ul class="navbar-menu">
+                  <li class="navbar-item">
+                    <a href="#course-info" class="navbar-link">Курсы</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="" class="navbar-link">Частые вопросы</a>
+                  </li>
+                  <li class="navbar-item">
+                    <a href="#advantages-info" class="navbar-link">О нас</a>
+                  </li>
+                </ul>
+              </nav>
+
+            <div class="navbar-connect">
+                <ul class="nav-connect">
+                    <li class="navbar-log">
+                        <a href="login.html" class="nav-log">
+                            Войти
+                        </a>
+                    </li>
+                    <li class="navbar-reg">
+                        <a href="reg.html" class="nav-reg">
+                            Регистрация
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <nav class="navbar-nav-hidden">
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="navbar-menu-hidden">
+            <li class="navbar-item">
+                <a href="index.html" class="navbar-link">Главная</a>
+            </li>
+              <li class="navbar-item">
+                <a href="#course-info" class="navbar-link">Курсы</a>
+              </li>
+              <li class="navbar-item">
+                <a href="" class="navbar-link">Частые вопросы</a>
+              </li>
+              <li class="navbar-item">
+                <a href="#advantages-info" class="navbar-link">О нас</a>
+              </li>
+              <li class="navbar-log">
+                <a href="login.html" class="nav-log">
+                    Войти
+                </a>
+            </li>
+            <li class="navbar-reg">
+                <a href="reg.html" class="nav-reg">
+                    Регистрация
+                </a>
+            </li>
+            </ul>
+          </nav>
+
+    </header>
+
+    <div class="container">
+
+        <h1>Основы HTML</h1>
+
+        <div>
+            HTML (Hypertext Markup Language) - это код, который используется для структурирования и отображения веб-страницы и её контента. Например, контент может быть структурирован внутри множества параграфов, маркированных списков или с использованием изображений и таблиц данных. Как видно из названия, эта статья даст вам базовое понимание HTML и его функций.
+        </div>
+
+        <h1>Что такое HTML на самом деле?</h1>
+
+        <div>HTML не является языком программирования; это язык разметки, и используется, чтобы сообщать вашему браузеру, как отображать веб-страницы, которые вы посещаете. Он может быть сложным или простым, в зависимости от того, как хочет веб-дизайнер. HTML состоит из ряда элементов, которые вы используете, чтобы вкладывать или оборачивать различные части контента, чтобы заставить контент отображаться или действовать определённым образом. Ограждающие теги могут сделать слово или изображение ссылкой на что-то ещё, могут сделать слова курсивом, сделать шрифт больше или меньше и так далее. Например, возьмём следующую строку контента:</div>
+    
+        <div class="code-block">
+            Моя кошка очень раздражена
+
+            <img src="assets/img/copy.png" alt="">
+        </div>
+
+        <div>Если бы мы хотели, чтобы строка стояла сама по себе, мы могли бы указать, что это абзац, заключая его в теги абзаца, вот как это выглядит:</div>
+    
+        <div class="code-block">
+            &lt;p&gt;Моя кошка очень раздражена&lt;/p&gt;
+
+
+
+            <img src="assets/img/copy.png" alt="">
+        </div>
+
+        <h2>Анатомия HTML элемента</h2>
+
+        <img class="picture" src="assets/img/img1.png" alt="">
+
+        <div>
+            1. Открывающий тег (Opening tag): Состоит из имени элемента (в данном случае, "p"), заключённого в открывающие и закрывающие угловые скобки. Открывающий тег указывает, где элемент начинается или начинает действовать, в данном случае — где начинается абзац. <br>
+            2. Закрывающий тег (Closing tag): Это то же самое, что и открывающий тег, за исключением того, что он включает в себя косую черту перед именем элемента. Закрывающий элемент указывает, где элемент заканчивается, в данном случае — где заканчивается абзац. Отсутствие закрывающего тега является одной из наиболее распространённых ошибок начинающих и может приводить к странным результатам. <br>
+            3. Контент (Content): Это контент элемента, который в данном случае является просто текстом. <br>
+            4. Элемент(Element): Открывающий тег, закрывающий тег и контент вместе составляют элемент. <br>
+            Элементы также могут иметь атрибуты, которые выглядят так:
+        </div>
+        
+        <img class="picture" src="assets/img/img2.png" alt="">
+
+        <div>
+            1. Атрибуты содержат дополнительную информацию об элементе, которую вы не хотите показывать в фактическом контенте. В данном случае, class это имя атрибута, а editor-note это значение атрибута. Класс позволяет дать элементу идентификационное имя, которое может позже использоваться, чтобы обращаться к элементу с информацией о стиле и прочих вещах.
+            <br>
+            Атрибут всегда должен иметь: <br>
+            &emsp;a. Пробел между ним и именем элемента (или предыдущим атрибутом, если элемент уже имеет один или несколько атрибутов). <br>
+            &emsp;b. Имя атрибута, за которым следует знак равенства. <br>
+            &emsp;c. Значение атрибута, заключённое с двух сторон в кавычки.
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-title">
+            <h2>PDP</h2>
+            <p>ProDevPlanet</p>
+        </div>
+
+        <div class="footer-tel-number">
+            <div class="tel-number-img">
+                <img src="assets/img/phone.png" alt="">
+            </div>
+
+            <div class="tel-number">
+                <a href="tel:+79374256953" class="number">+7 937 425-69-53 </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
